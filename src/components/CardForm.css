@@ -1,0 +1,25 @@
+
+
+.img-logo{
+    padding-bottom: 30px;
+}
+
+.content-card {
+    height: 350px;
+    background-color: #fff;
+    border-radius: 16px!important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(233,240,243,.5), 0 0 0 1px #e6ecf8;
+    box-shadow: 0 2px 2px 0 rgba(233,240,243,.5), 0 0 0 1px #e6ecf8;
+    width: 22em;
+}
+
+.udemy {
+    width: auto;
+    padding-bottom: 51px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,35 @@
+.img-skills{
+    width: 64px;
+    height: auto;
+    margin: 0 auto;
+    max-height: 100px;
+}
+
+.bg-color2{
+    background-color: #FFFFFF;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-box {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 16px!important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(233,240,243,.5), 0 0 0 1px #e6ecf8;
+    box-shadow: 0 2px 2px 0 rgba(233,240,243,.5), 0 0 0 1px #e6ecf8;
+    width: 22em;
+}
+
+.flex-center > span {
+    letter-spacing: -0.7px;
+}

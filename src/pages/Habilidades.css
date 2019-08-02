@@ -1,0 +1,19 @@
+.skills-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f7;
+}
+
+.title-sk{
+    color: black;
+    padding: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .skills-wrapper{
+        height: auto;
+       
+    }
+}

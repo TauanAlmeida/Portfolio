@@ -1,0 +1,17 @@
+.formacao-wrapper{
+    height: 100vh;
+    background-color: #f4f4f7;
+}
+
+.formacao-wrapper .title{
+    color: black;
+     text-align: center;
+     padding: 40px;
+ }
+ 
+ @media screen and (max-width: 992px) {
+    .formacao-wrapper{
+        height: auto;
+       
+    }
+}
