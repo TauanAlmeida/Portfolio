@@ -12,7 +12,7 @@ export default function Home() {
             <h1>TAUAN ALMEIDA</h1>
             <p>Olá, Sou um amante do Front-End, atualmente estudando 
                 para ser um desenvolvedor Fullstack Javascript.</p>
-            <button type="button" className="btn btn-dark">Confira meu trabalho</button>
+            <a href="#sobre"><button type="button" className="btn btn-dark">Confira meu trabalho</button></a> 
           
         </div>
     </div>
