@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import Home from './pages/Home/Home';
+import GlobalStyle from './styles/global'
+import { ThemeProvider } from 'styled-components'
+import light from './styles/themes/light'
+import dark from './styles/themes/dark'
+import Sobre from './pages/Sobre/Sobre';
+import Habilidades from './pages/Habilidades/Habilidades'
+import Projetos from './pages/Projetos/Projetos';
+import Formacao from './pages/Formacao/Formacao'
+import ThemePersistedState from './utils/ThemePersistedState'
+import Footer from './components/Footer/Footer'
+import ScrollTop from './components/ScrollTop/ScrollTop'
+import { startAnimate } from './utils/IntersectObserver'
+import $ from 'jquery'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const [theme, setTheme] = ThemePersistedState('theme', light)
+
+    const toggleTheme = ( ) => {
+        setTheme(theme.title === 'light' ? dark : light)
+    }
+
+    useEffect(()=> {  
+        //start tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        //start animations
+        startAnimate();
+    },[])
+
+    return (
+        <ThemeProvider theme={theme}>
+        <GlobalStyle/>
+            <ScrollTop/>
+            <Home toggleTheme={toggleTheme}/>
+            <Sobre/>
+            <Habilidades/>
+            <Projetos/>
+            <Formacao/>
+            <Footer/>
+        </ThemeProvider>
+    )
 }
-
-export default App;
