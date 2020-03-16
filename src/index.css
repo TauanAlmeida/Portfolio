@@ -1,19 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-* {
-  margin: 0;
-  padding: 0;
-  background: "#dfdfdf";
-  font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
 
-}
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.main-title{
-  color: white !important;
-}
+  .quotes{
+    color: #dc3545;
+    font-size: 22px;
+    padding: 0 5px;
+  }
