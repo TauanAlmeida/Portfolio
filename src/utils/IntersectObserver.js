@@ -1,14 +1,19 @@
+/*
+* Faz animação dinamicamente de com a classe css em global.js
+*   by Tauan Almeida @2020
+*/
+
 export const io = new IntersectionObserver(entries => {
     entries.forEach((entry) => {
-    let { animate } = entry.target.dataset
+        let { animate } = entry.target.dataset
 
-    if (entry.intersectionRatio !== 0){
-        entry.target.style.opacity = "1"
-        entry.target.classList.add(`${animate}`)
-    } else {
-        entry.target.style.opacity = "0"
-        entry.target.classList.remove(`${animate}`)
-    }
+        if (entry.intersectionRatio !== 0){
+            entry.target.style.opacity = "1"
+            entry.target.classList.add(`${animate}`)
+        } else {
+            entry.target.style.opacity = "0"
+            entry.target.classList.remove(`${animate}`)
+        }
     })
  })
 
