@@ -7,7 +7,6 @@ const config = {
 };
   
 export const io = new IntersectionObserver(entries => {
-    var progressLoaded = false
     entries.forEach((entry) => {
         let { animate } = entry.target.dataset
        
