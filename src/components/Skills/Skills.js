@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { ThemeContext } from 'styled-components'
 import { Container, Tecnologias } from './styles'
 import UnderBar from '../UnderBar/UnderBar'
-
+import ProgressBar from '../ProgressBar/ProgressBar'
 
 export default function Card(props) {
     const {colors} = useContext(ThemeContext)
@@ -18,12 +18,14 @@ export default function Card(props) {
                     <div className="row">
                         {
                         props.data.map(( data, index)=> (  
-                            <Tecnologias key={index} className="col" >
-                               {data.name === 'Materialize' 
-                                ? <img src={data.imgUrl} style={{height: '70px'}} alt="Materialize"/>
-                                : <img src={data.imgUrl} alt="Materialize"/>}
-                                <span>{data.name}</span>
-                            </Tecnologias> 
+                            <div className="col-4 mt-5">
+                                <ProgressBar
+                                    percentage={data.percentage}
+                                    tecName={data.tecName}
+                                    animate="loadProgress"
+
+                                />
+                            </div>
                         ))
                         }
                         </div>

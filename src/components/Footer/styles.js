@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { shade } from 'polished'
 
 export const Container = styled.footer`
-  height: 100px;
   background-color: ${props =>  shade(0.1 ,props.theme.colors.background)};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:center;
+  text-align: center;
+  padding: 40px;
   & .social-work ul{
       display: flex;
       flex-direction: row;

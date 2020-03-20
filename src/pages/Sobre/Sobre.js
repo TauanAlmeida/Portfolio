@@ -17,23 +17,23 @@ export default function Sobre() {
             color={colors.elements}
             animate="slideInLeft"
         />
-        <div className="mt-5 row" data-animate="fadeInUp">
-            <ColAlignCenter className="col-12 col-sm-6 col-lg-3 ajust-center">
+        <div className="mt-5 row">
+            <ColAlignCenter className="col-12 col-sm-6 col-lg-3 ajust-center" data-animate="fadeInUp"> 
                 <Hexagon icon="fas fa-lightbulb"/>
                 <h3 className="white-color">Intuitivo</h3>
                 <p className="white-color">Forte preferência por UX / UI intuitiva e fácil de usar.</p>
             </ColAlignCenter>
-            <ColAlignCenter className="col-12 col-sm-6  col-lg-3 ajust-center">
+            <ColAlignCenter className="col-12 col-sm-6  col-lg-3 ajust-center" data-animate="fadeInUp">
                 <Hexagon icon="fas fa-tachometer-alt"/>
                 <h3 className="white-color">Rápido</h3>
                 <p className="">Código limpo e eficaz e interação sem atraso.</p>
             </ColAlignCenter>
-            <ColAlignCenter className="col-12 col-sm-6  col-lg-3 ajust-center">
+            <ColAlignCenter className="col-12 col-sm-6  col-lg-3 ajust-center" data-animate="fadeInUp">
                 <Hexagon icon="fas fa-chart-line"/>
                 <h3 className=" white-color">Escalonável</h3>
                 <p className="white-color">Cresça seu projeto de forma qualitativa e sem problemas.</p>
             </ColAlignCenter>
-            <ColAlignCenter className="col-12 col-sm-6  col-lg-3 ajust-center">
+            <ColAlignCenter className="col-12 col-sm-6  col-lg-3 ajust-center" data-animate="fadeInUp">
                 <Hexagon icon="fas fa-rocket"/>
                 <h3 className=" white-color">Dinâmico</h3>
                 <p className="white-color">Seu site funcionando em multiplataformas</p>

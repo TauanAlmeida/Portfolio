@@ -48,7 +48,6 @@ export const NavItem = styled.a`
     display: flex;
     align-items: center;
     &:hover{
-        
         color: ${props => props.theme.colors.secondary};
         transition: color 1s;
         transition: border 1s;

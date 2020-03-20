@@ -6,7 +6,7 @@ export default {
         background: '#f4f4f7',
         text: '#212529',
         elements: '#dc3545',
-        cardBackground: '#fafafa'
+        cardBackground: '#dee2e6'
     }
 
 }
