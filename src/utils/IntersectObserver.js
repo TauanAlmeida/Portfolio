@@ -1,5 +1,5 @@
 /*
-* Faz animação dinamicamente de com a classe
+* Faz animação dinamicamente com classe css
 *   by Tauan Almeida @2020
 */
 const config = {
