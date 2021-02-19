@@ -50,9 +50,9 @@ export default function Sobre() {
             </div>
             <div className="col"  data-animate="slideInRight">
                 <Description><i className="fas fa-envelope"></i><span>Tauan_almeida@hotmail.com </span></Description>
-                <Description><i className="fas fa-phone-alt"></i><span>(87) 98832-6362 </span></Description>
+                <Description><i className="fas fa-phone-alt"></i><span>(87) 98862-7250 </span></Description>
                 <Description><i className="fas fa-map-marker-alt"></i><span>Petrolina - PE</span></Description>
-                <Description><i className="far fa-calendar-alt"></i><span>24 anos</span></Description>
+                <Description><i className="far fa-calendar-alt"></i><span>26 anos</span></Description>
             </div>
         </div>
     </Container>
